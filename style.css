@@ -1,0 +1,260 @@
+* {
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+     background-color: #111;
+     color: #fff;
+}
+
+.animation1 {
+     background-color: red;
+     height: 200px;
+     width: 200px;
+     margin-left: 10px;
+     animation-name: anim_1;
+     animation-duration: 5s;
+     animation-timing-function: ease-in-out;
+     animation-iteration-count: infinite;
+}
+
+@keyframes anim_1 {
+     from {
+          background-color: red;
+     }
+
+     to {
+          background-color: yellow;
+     }
+}
+
+.animation2 {
+     background-color: red;
+     height: 200px;
+     width: 200px;
+     margin-left: 10px;
+     position: relative;
+     animation-name: anim_2;
+     animation-duration: 5s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+     animation-direction: alternate-reverse;
+}
+
+@keyframes anim_2 {
+     0% {
+          top: 0px;
+          left: 10px;
+     }
+
+     25% {
+          top: 0px;
+          left: 250px;
+          background-color: yellow;
+     }
+
+     50% {
+          top: 250px;
+          left: 250px;
+          background-color: gray;
+     }
+
+     75% {
+          top: 250px;
+          left: 10px;
+          background-color: blue;
+     }
+
+     100% {
+          top: 0px;
+          left: 10px;
+     }
+}
+
+h3 {
+     margin-top: 250px;
+}
+
+.animation3 {
+     background-color: greenyellow;
+     height: 200px;
+     width: 200px;
+     position: relative;
+     margin-left: 10px;
+     /* animation-name: anim_3;
+     animation-duration: 5s;
+     animation-iteration-count: 5;
+     animation-timing-function: ease-in-out;
+     animation-direction: alternate;
+     animation-delay: 5s; */
+     /* shorthand property */
+     /* animation: animation-name animation-dutation animation-timing-function animation-delay animation-iteration-count animation-direction animation-fill-mode; */
+     animation: anim_3 5s ease-in-out 5s 5 alternate;
+}
+
+h4 {
+     margin-top: 250px;
+}
+
+@keyframes anim_3 {
+     0% {
+          top: 0px;
+          left: 10px;
+     }
+
+     25% {
+          top: 0px;
+          left: 250px;
+          background-color: gold;
+     }
+
+     50% {
+          top: 250px;
+          left: 250px;
+          background-color: goldenrod;
+     }
+
+     75% {
+          top: 250px;
+          left: 10px;
+          background-color: yellow;
+     }
+
+     100% {
+          top: 0px;
+          left: 10px;
+     }
+}
+
+
+
+.animation4 {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-items: center;
+}
+
+.liner {
+     background-color: red;
+     border: 2px solid black;
+     height: 100px;
+     width: 200px;
+     text-align: center;
+     font-size: larger;
+     font-weight: 800;
+     position: relative;
+     /* animation attribute */
+     /* animation-name: liner_anim;
+     animation-duration: 5s;
+     animation-iteration-count: 5;
+     animation-timing-function: liner;
+     animation-direction: alternate;
+     animation-delay: 5s; */
+     /* shorthand property */
+     /* animation: animation-name animation-dutation animation-timing-function animation-delay animation-iteration-count animation-direction animation-fill-mode; */
+     animation: liner_anim 5s linear 0s infinite alternate-reverse;
+}
+
+@keyframes liner_anim {
+     0% {
+          top: 0px;
+          left: -250px;
+     }
+
+     50% {
+          top: 0px;
+          left: 250px;
+     }
+
+     100% {
+          top: 0px;
+          left: -250px;
+     }
+}
+
+.ease {
+     background-color: red;
+     border: 2px solid black;
+     height: 100px;
+     width: 200px;
+     text-align: center;
+     font-size: larger;
+     font-weight: 800;
+     position: relative;
+     animation: ease_anim 5s ease 0s infinite alternate-reverse;
+}
+
+@keyframes ease_anim {
+     0% {
+          top: 0px;
+          left: -250px;
+     }
+
+     50% {
+          top: 0px;
+          left: 250px;
+     }
+
+     100% {
+          top: 0px;
+          left: -250px;
+     }
+}
+
+.easeIn {
+     background-color: red;
+     border: 2px solid black;
+     height: 100px;
+     width: 200px;
+     text-align: center;
+     font-size: larger;
+     font-weight: 800;
+     position: relative;
+     animation: easein_anim 5s ease-in 0s infinite alternate-reverse;
+}
+
+@keyframes easein_anim {
+     0% {
+          top: 0px;
+          left: -250px;
+     }
+
+     50% {
+          top: 0px;
+          left: 250px;
+     }
+
+     100% {
+          top: 0px;
+          left: -250px;
+     }
+}
+
+
+.easeInOut {
+     background-color: red;
+     border: 2px solid black;
+     height: 100px;
+     width: 200px;
+     text-align: center;
+     font-size: larger;
+     font-weight: 800;
+     position: relative;
+     animation: easeinout_anim 5s ease-in-out 0s infinite alternate-reverse;
+}
+@keyframes easeinout_anim {
+     0% {
+          top: 0px;
+          left: -250px;
+     }
+
+     50% {
+          top: 0px;
+          left: 250px;
+     }
+
+     100% {
+          top: 0px;
+          left: -250px;
+     }
+}
